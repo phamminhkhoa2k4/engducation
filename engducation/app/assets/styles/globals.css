@@ -3,9 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 210 40% 98%;
+  --foreground: 220 15% 15%;
+  --primary: 240 60% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 50% 60%;
+  --secondary-foreground: 0 0% 100%;
+  --destructive: 0 70% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --muted: 220 10% 90%;
+  --muted-foreground: 220 15% 20%;
+  --accent: 180 80% 40%;
+  --accent-foreground: 0 0% 100%;
+  --border: 220 10% 80%;
+  --input: 220 10% 80%;
+  --ring: 220 80% 50%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 15% 15%;
+  --popover: 220 20% 95%;
+  --popover-foreground: 220 15% 15%;
+  --radius: 0.5rem;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
