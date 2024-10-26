@@ -8,7 +8,7 @@ import {
 } from "@clerk/nextjs";
 import "./assets/styles/globals.css";
 import {Nunito} from "next/font/google"
-import { dark } from "@clerk/themes";
+import { Toaster } from "@/components/ui/sonner";
 
 const font = Nunito({subsets : ["latin"]})
 
@@ -30,10 +30,12 @@ export default function RootLayout({
           unsafe_disableDevelopmentModeWarnings: true,
         },
       }}
-      
     >
       <html lang="en">
-        <body className={font.className}>{children}</body>
+        <body className={font.className}>
+          <Toaster/>
+          {children}
+        </body>
       </html>
     </ClerkProvider>
   );
